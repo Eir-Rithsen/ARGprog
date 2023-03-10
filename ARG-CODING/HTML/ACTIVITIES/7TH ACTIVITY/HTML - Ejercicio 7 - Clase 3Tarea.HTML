@@ -1,0 +1,160 @@
+<!--Se deben solicitar los siguientes datos:
+
+Nombre (máximo 20 caracteres). Obligatorio
+Apellido (máximo 25 caracteres). Obligatorio
+DNI (solo números). Obligatorio
+Correo electrónico. Obligatorio
+Estado Civil. Seleccionar única con las siguiente opciones:
+Soltera/o
+Casada/o
+Divorciada/o
+Viuda/o
+Conviviente
+Intereses. Selección múltiple con las siguientes opciones:
+Culturales
+Deportivos
+Turísticos
+Sociales
+Otros
+Descripción de intereses (texto de hasta 400 caracteres).
+País de residencia. Selección única con las siguientes opciones:
+Argentina
+Bolivia
+Brasil
+Colombia
+Costa Rica
+Chile
+México
+Nicaragua
+Panamá
+Paraguay
+Perú
+Uruguay
+Venezuela
+Otro
+Recibir información adicional (checkbox). Seleccionado por defecto!-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresos de Datos Personales</title>
+</head>
+<body>
+    <p>Crear una página para poder realizar ingresos personales.<br> Ingresos de Datos Personales debe ser su título.<br>
+
+        Se deben solicitar los siguientes datos:</p>
+        <ul>
+            <li>Nombre (máximo 20 caracteres). Obligatorio</li>
+            <li>Apellido (máximo 25 caracteres). Obligatorio</li>
+            <li>DNI (solo números). Obligatorio</li>
+            <li>Correo electrónico. Obligatorio</li>
+            <li><mark>Estado Civil. Seleccionar única con las siguiente opciones:</mark></li>
+            <li>Soltera/o</li>
+            <li>Casada/o</li>
+            <li>Divorciada/o</li>
+            <li>Viuda/o</li>
+            <li>Conviviente</li>
+            <li><mark>Intereses. Selección múltiple con las siguientes opciones:</mark></li>
+            <li>Culturales</li>
+            <li>Deportivos</li>
+            <li> Turísticos</li>
+            <li>Sociales</li>
+            <li> Otros</li>
+            <li><mark>Descripción de intereses (texto de hasta 400 caracteres).</mark></li>
+            <li><b>País de residencia. Selección única con las siguientes opciones:</b></li>
+            <li>Argentina</li>
+            <li>Bolivia</li>
+            <li>Brasil</li>
+            <li>Colombia</li>
+            <li>Costa Rica</li>
+            <li>Chile</li>
+            <li>México</li>
+            <li>Nicaragua</li>
+            <li> Panamá</li>
+            <li>Paraguay</li>
+            <li> Perú</li>
+            <li>Uruguay</li>
+            <li>Venezuela</li>
+            <li>  Otro</li>
+        </ul>
+        <p>Recibir información adicional (checkbox). Seleccionado por defecto</p>
+
+            <section>
+                <fieldset style="width: 0px;">
+                    <legend>Ingresos de datos personales</legend>
+                <form>
+                    <label>Nombre</label><br>
+                    <input type="text" placeholder="Obligatorio" input required minlength="0" maxlength="20">
+
+
+                    <br><br>
+                    <label>Apellido</label><br>
+                    <input type="text" placeholder="Obligatorio" input required minlength="0" maxlength="25">
+
+                    <br><br>
+                    <label>D.N.I</label><br>
+                    <input type="number" placeholder="Obligatorio" input required maxlength="10">
+
+                    <br><br>
+                    <label>Email</label><br>
+                    <input type="email" placeholder="Obligatorio" input required>
+
+                    <br><br>
+                                        <label>Estado Civil
+                                            <p><i>Seleccione una de las siguientes opciones</i></p>
+                                        </label><br>
+                                        <input type="radio" name="radio">Soltera/o<br>
+                                        <input type="radio" name="radio">Casada/o<br>
+                                        <input type="radio" name="radio">Divorciada/o<br>
+                                        <input type="radio" name="radio">Viuda/o<br>
+                                        <input type="radio" name="radio">Conviviente<br>
+                    
+        
+                    <br><br>
+                    <label>Intereses
+                        <p>Selecciones una/o varias de las sigueintes opciones</p>
+                    </label><br>
+                         <select multiple>
+                            <option value="1">Culturales</option>
+                            <option value="2">Deportivos</option>
+                            <option value="3">Turisticos</option>
+                            <option value="4">Sociales</option>
+                            <option value="5">otros</option>
+                            </select>
+    
+                            <br><br>
+                            <label>Descripcion de Intereses</label>
+                     <textarea type="text" placeholder="opcional" maxlength="400">Cuentanos mas sobre ti</textarea>
+
+                         <br><br>
+                            <label><b;>Pais de residencia</b></label><br>
+                                    <input type="radio" name="radio">Argentina</option><br>
+                                    <input type="radio" name="radio">Bolivia</option><br>
+                                    <input type="radio" name="radio">Brasil</option><br>
+                                    <input type="radio" name="radio">Colombia</option><br>
+                                    <input type="radio" name="radio">Costa Rica</option><br>
+                                    <input type="radio" name="radio">Chile</option><br>
+                                    <input type="radio" name="radio">Mexico</option><br>
+                                    <input type="radio" name="radio">Nicaragua</option><br>
+                                    <input type="radio" name="radio">Panamá</option><br>
+                                    <input type="radio" name="radio">Paraguay</option><br>
+                                    <input type="radio" name="radio">Perú</option><br>
+                                    <input type="radio" name="radio">Uruguay</option><br>
+                                    <input type="radio" name="radio">Venezuela</option><br>
+                                    <input type="radio" name="radio">Otro</option><br>
+                                    
+                                    
+                                    <br><br>
+                                    <label>Ultimos pasos</label><br>
+                                    <input type="checkbox" name="check" checked>Recibir informacion adicional<br>
+                                    <br><br>
+                    <button type="submit">Enviar</button>
+        </form>
+        </fieldset>
+        </section>
+</body>
+</html>

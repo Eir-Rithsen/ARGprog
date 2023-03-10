@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML: Class 3-Tables</title>
+</head>
+<body>
+    <!--Tablas: Etiquetas <table> <tr> <td>
+➔ Una tabla se inserta mediante la etiqueta <table>.
+➔ Está compuesta por filas, que se agregan mediante la 
+etiqueta <tr> (table rows).
+➔ Cada fila se compone de celdas <td> (table división).
+<table>
+ <tr>
+<td>Argentina</td>
+<td>3.761.274 Km2</td>
+ <td>45.808.747 Personas</td>
+ </tr>
+ <tr>
+<td>Uruguay</td>
+<td>176.215 Km2</td>
+<td>3.485.152 Personas</td>
+ </tr>
+</table>
+—---------------------
+------------
+.html
+www
+Ejemplo: Tabular la superficie y población de Argentina
+ y Uruguay-->
+ <p>Tabla Informativa</p>
+ <table>
+    <tr>
+        <tr>
+        <th rowspan="2">Pais</th>
+        <th colspan="2">Datos</th>
+        </tr>
+        <th>Extension (km2)</th>
+        <th>Poblacion</th>
+        </tr>
+        <tr>
+            <td>Argentina</td>
+            <td>3.761.274</td>
+            <td>45.808.747</td>
+            </tr>
+            <tr>
+                <td>Uruguay</td>
+                <td>176.215</td>
+                <td>3.485.152</td>
+                </tr>
+
+                <!--Tablas: Expansión de celdas -
+                     Atributo colspan
+➔ Si necesitamos que una celda ocupe o se expanda 
+hasta dos o más columnas debemos indicar
+a través del atributo colspan la cantidad de 
+celdas/columnas que debe ocupar.
+<table>
+...................
+Ejemplo: Al ejemplo anterior le vamos a agregar una celda 
+que ocupe 2, por encima de los títulos “Extensión
+Km2” y “Población”, y que muestre la palabra “Datos”
+...................-->
+                
+<!--Tablas: Expansión de celdas - Atributo rowspan
+➔ De igual modo, si necesitamos que una celda ocupe o
+ se expanda hasta dos o más filas,
+debemos indicar a través del atributo rowspan la cantidad 
+de celdas/filas que debe ocupar.
+<table>
+------------------------------
+ <tr>                        |
+<th rowspan = 2>País</th>    |
+<th colspan = 2>Datos</th>   |
+ </tr>                       |
+ <tr>                        |
+<th>Extensión Km2</th>       |
+ <th>Población</th>          |
+ </tr>                       |
+------------------------------
+</table>
+Ejemplo: Vamos a modificar el ejemplo anterior para que la 
+celda que muestra la palabra “País”, ocupe 2 filas.!-->
+
+<!--Tablas: Secciones - Etiquetas <thead>, <tfoot> y <tbody>
+
+    Podemos dividir la tablas en 3 secciones:
+1. La de los encabezados, indicada por la etiquetas
+ <thead></thead>
+2. La de los datos, indicada por las etiquetas 
+<tbody></tbody>
+3. La del pie, indicada por las etiquetas 
+<tfoot></tfoot>
+
+El uso de estas etiquetas, aporta significado semántico 
+y permitirá cuando usemos CSS aplicar
+un estilo diferencial a cada una de las secciones.
+Tener en cuenta que:
+➔ Cada uno de estos pares de etiquetas, deben encerrar 
+etiquetas <th> o <td> según
+corresponda.
+➔ La etiqueta <caption> debe quedar por fuera de estas 
+etiquetas y como primer elemento.
+
+Tablas: Secciones - Etiquetas <thead>, <tfoot> y <tbody>
+
+Ejemplo: Si aplicáramos a nuestro ejemplo estas etiquetas, 
+no veríamos en esta instancia del curso, ningún
+reflejo en la parte visual. Por ello, sólo a modo ilustrativo,
+ se muestra como podrían estar utilizadas
+
+---------------------------------------------------------
+ <table>                                                |
+. . . . . . . . . .                                     |
+<thead>                                                 |
+ <tr>                                                   |
+<th></th>                                               |
+<th colspan = 2>Datos</th>                              |
+ </tr>                                                  |
+ <tr>                                                   |
+<th>País</th>                                           |
+<th>Extensión Km2</th>                                  |
+ <th>Población</th>                                     |
+ </tr>                                                  |
+</thead>                                                |
+ . . . . . . . . . .                                    |
+</table>                                                |
+---------------------------------------------------------
+
+
+---------------------------------------------------------
+<table>                                                 |
+ . . . . . . . . . .                                    |
+<tbody>                                                 |
+ <tr>                                                   |
+<th>País</th>                                           |
+<th>Extensión Km2</th>                                  |
+ <th>Población</th>                                     |
+ </tr>                                                  |
+ <tr>                                                   |
+<td>Argentina</td>                                      |
+<td>3.761.274</td>                                      |
+ <td>45.808.747</td>                                    |
+ </tr>                                                  |
+</tbody>                                                |
+ . . . . . . . . . .                                    |
+</table>                                                |
+---------------------------------------------------------
+Resumen
+
+Tablas
+➔<table> inserta la tabla
+➔<tr> crea una fila en la tabla
+➔<td> crea una celda
+➔<th> crea una celda para encabezado dentro de un <tr>
+➔<caption> para dar un título a la tabla, primer elemento 
+    dentro de <table>
+➔Atributos colspan y rowspan para expandir celdas <td> y 
+    <th>
+➔<thead> para encerrar los elementos que conforman el 
+    encabezado de la tabla
+➔<tbody> para encerrar los elementos que contienen los 
+    datos de la tabla
+➔<tfoot> para encerrar los elementos que conforman el 
+    pie de la tabla
+-->
+
+<p>Activity</p>
+<p>Hacer una página que reproduzca la tabla que se muestra a continuación.<br>
+    Identifique el título y las secciones, utilizando las etiquetas correspondientes.<br>
+    No tenga en cuenta las líneas, ni el resaltado de las palabras.</p>
+
+    <figure>
+        <img src = "https://drive.google.com/file/d/1xTBwGgqv7VUgM49bjmir1L8yujEeXP8g/view?usp=sharing"
+        alt = "Grafica de variaciones de Noviembre con respecto a diciembre de 2021, segun bienes y servicios. Total nacional y regiones" width="800">
+        <figcaption>
+       Grafica proporcionada por el INDEC, Direccion Nacional de Estadisticas de Precios. Direccion de Indices de Precios de Consumo.
+        </figcaption>
+        <a href="https://drive.google.com/file/d/1xTBwGgqv7VUgM49bjmir1L8yujEeXP8g/view?usp=sharing" target="_blank">Grafica INDEC 2021</a>
+
+
+</body>
+</html>

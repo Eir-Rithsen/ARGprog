@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion a Formularios en HTML</title>
+</head>
+<body>
+
+    <section>
+        <fieldset style="width: 0px;">
+            <legend>Introduccion</legend>
+    <form action="" target="_blank">
+        <label for="usuario">Usuario</label><br>
+        <input type="text" name="usuario">
+
+        <br><br>
+        <label for="cont">Contraseña</label><br>
+        <input type="text" name="cont">
+
+
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+    </fieldset>
+    </section>
+    <section>
+        <fieldset style="width: 0px;">
+            <legend>Input Basico</legend>
+            <form>
+                <label>Texto</label><br>
+                <input type="text" placeholder="Hola Mundo!">
+
+                <br><br>
+                <label>Numero</label><br>
+                <input type="number">
+
+                <br><br>
+                <label>Fecha</label><br>
+                <input type="date">
+
+                <br><br>
+                <label>Tiempo</label><br>
+                <input type="time">
+
+                <br><br>
+                <label>Email</label><br>
+                <input type="email">
+                
+                <br><br>
+                <label>Contraseña</label><br>
+                <input type="Password">
+
+        <br><br>
+        <button type="submit">Enviar</button>
+        </form>
+        </fieldset>
+        </section>
+        <section>
+        <fieldset style="width: 0px;">
+            <legend>Area de Texto</legend>
+            <form>
+
+                <textarea type="text">Texto por Defecto</textarea>
+                </form>
+                </fieldset>
+                </section>
+                <section>
+                <fieldset style="width: 0px;">
+                    <legend>Seleccion Desplegable</legend>
+                    <form>
+                        <label>Simple</label><br>
+                        <select>
+                            <option value="1">HTML</option>
+                            <option value="2">CSS</option>
+                            <option value="3">JS</option>
+                            </select>
+
+                            <br><br>
+                            <label>multiple</label><br>
+                            <select multiple>
+                                <option value="1">HTML</option>
+                                <option value="2">CSS</option>
+                                <option value="3">JS</option>
+                                </select>
+                                </form>
+                                </fieldset>
+                                </section>
+                                <section>
+                                <fieldset style="width: 0px;">
+                                    <legend>Input Avanzado</legend>
+                                    <form>
+                                        <label>checkbox</label><br>
+                                        <input type="checkbox" name="check">HTML
+                                        <input type="checkbox" name="check">CSS
+                                        <input type="checkbox" name="check">JS
+
+                                        <br><br>
+                                        <label>radio</label><br>
+                                        <input type="radio" name="radio">HTML
+                                        <input type="radio" name="radio">CSS
+                                        <input type="radio" name="radio">JS
+
+                                        <br><br>
+                                        <label>Datalist</label><br>
+                                        <input list="data">
+                                        <datalist id="data">
+                                            <option value="HTML"></option>
+                                            <option value="CSS"></option>
+                                            <option value="JS"></option>
+                                                </datalist>
+
+
+                                                <br><br>
+                                                <label>Hidden</label><br>
+                                                <input type="hidden" value="secreto">
+
+                                                <br><br>
+                                                <label>Otros</label><br>
+                                                <input type="range">
+                                                <input type="file">
+                                                <input type="color" value="152b59">
+
+                                                </form>
+                                                </fieldset>
+                                                </section>
+ <!--validacion e inabilitacionde formulario en html!-->
+ <p>Valdacion e inhabilitacionde formularios en HTML</p>
+
+ <section>
+    <fieldset style="width: 0px;">
+        <legend>Validacion</legend>
+        <form>
+            <label>Tipo & Requerido</label><br>
+            <input type="email" required>
+
+            <br><br>
+            <label>Numeros</label><br>
+            <input type="number" min="1" max="3">
+            <input type="range" min="1" max="3">
+
+            <br><br>
+            <label>Texto</label><br>
+            <input minlength="3" maxlength="6">
+        
+            <br><br>
+            <label>Patrones</label><br>
+            <input pattern="[A-Za-z]{3}" placeholder="Tres Letras">
+            <input type="password" pattern="">
+
+
+
+            </form>
+
+            <br><br>
+            <button type="submit">Enviar</button>
+            </fieldset>
+            </section>
+            <>
+</body>
+</html>
