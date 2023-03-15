@@ -1,0 +1,90 @@
+<!--Combinados
+Al separar selectores con un espacio 
+podemos estilar elementos sólo si son
+ descendientes de otros, es decir,
+  si se encuentran dentro.
+  ---------------------------------
+  ---------------------------------
+  ul li { font-family: sans-serif; } 
+👉 asigna la familia de tipografía
+-sans-serif los elementos li dentro de ul
+nav * { color: red; } 
+👉le otorga a todos los elementos dentro de un nav
+el color rojo
+.envio button { background-color: green; } 
+👉los botones dentro de un
+elemento con clase
+“envio” serán de color
+verde!-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIVERSAL</title>
+	<link rel= "stylesheet" href="combinados.css">
+</head>
+<body>
+    <nav>
+        <a href="/html/">UNORDERED LIST</a> |
+        <a href="/css/">CSS</a> |
+        <a href="/js/">JavaScript</a> |
+        <a href="/python/">Python</a>
+      </nav>
+<section>
+    <fieldset style="width: 40%;">
+    <legend>Unordered Lists</legend>
+      <ul>
+        <li>prueba </li>
+        <li>test</li>
+        <li>library</li>
+        </ul>
+        </fieldset>
+</section>
+<section>
+    <fieldset style="width: 40%;">
+    <legend>Ordered Lists</legend>
+      <ol type="I">
+        <li>oblicuo </li>
+        <li>tester</li>
+        <li>supercar</li>
+        </ol>
+        </fieldset>
+</section>
+
+
+<section>
+    <fieldset style="width: 40%;">
+        <legend>Ingresos de datos</legend>
+    <form>
+<label><b;>Pais de residencia</b></label><br>
+<input type="radio" name="radio">Argentina</option><br>
+<input type="radio" name="radio">Bolivia</option><br>
+<input type="radio" name="radio">Brasil</option><br>
+<input type="radio" name="radio">Colombia</option><br>
+<input type="radio" name="radio">Costa Rica</option><br>
+<input type="radio" name="radio">Chile</option><br>
+<input type="radio" name="radio">Mexico</option><br>
+<input type="radio" name="radio">Nicaragua</option><br>
+<input type="radio" name="radio">Panamá</option><br>
+<input type="radio" name="radio">Paraguay</option><br>
+<input type="radio" name="radio">Perú</option><br>
+<input type="radio" name="radio">Uruguay</option><br>
+<input type="radio" name="radio">Venezuela</option><br>
+<input type="radio" name="radio">Otro</option><br>
+
+
+<br><br>
+<label class="button">Ultimos pasos</label><br>
+<input type="checkbox" name="check" checked>Recibir informacion adicional<br>
+<br><br>
+<button class="submit" type="submit">Enviar</button>
+</form>
+</fieldset>
+</section>
+</body>
+</head>

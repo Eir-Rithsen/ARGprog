@@ -1,0 +1,26 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+p.error {
+    color: darkred;
+}
+div.error {
+    box-shadow: 0 0 1px 1px #0005;
+    width: 400px;
+}
+
+div.error *{
+    margin: 0;
+    padding: 6px;
+}
+
+div.error h3 {
+    background-color: darkred;
+    color: white;
+}
+
+div.error p {
+    background-color: mistyrose;
+    color: darkred;
+}
+

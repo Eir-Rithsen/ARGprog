@@ -1,0 +1,57 @@
+<!--Cuando tenemos un estilo que es común a 
+    múltiples elementos, podemos separar
+varios selectores utilizando la coma (,) 
+para que aplique a todos ellos-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiples</title>
+    <link rel="stylesheet" href="../MULTIPLES/multiples.css">
+</head>
+<body>
+    <section>
+        <fieldset style="width: 0px;">
+            <legend>Ingresos de datos personales</legend>
+        <form>
+            <label>Nombre</label><br>
+            <input type="text" placeholder="Obligatorio" input required minlength="0" maxlength="20">
+
+
+            <br><br>
+            <label>Apellido</label><br>
+            <input type="text" placeholder="Obligatorio" input required minlength="0" maxlength="25">
+
+            <br><br>
+            <label>D.N.I</label><br>
+            <input type="number" placeholder="Obligatorio" input required maxlength="10">
+
+            <br><br>
+            <label>Email</label><br>
+            <input type="email" placeholder="Obligatorio" input required>
+
+            <br><br>
+            <label>Intereses
+                <p>Selecciones una/o varias de las sigueintes opciones</p>
+            </label><br>
+                 <select multiple>
+                    <option value="1">Culturales</option>
+                    <option value="2">Deportivos</option>
+                    <option value="3">Turisticos</option>
+                    <option value="4">Sociales</option>
+                    <option value="5">otros</option>
+                    </select>
+                    <br><br>
+                            <label>Descripcion de Intereses</label>
+                     <textarea type="text" placeholder="opcional" maxlength="400">Cuentanos mas sobre ti</textarea>
+
+            </form>
+            </fieldset>
+        </section>
+            
+</body>
+</html>
