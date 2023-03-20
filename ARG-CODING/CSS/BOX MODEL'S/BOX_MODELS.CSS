@@ -1,0 +1,187 @@
+/*
+CSS Clase 1: Modelo de Cajas:
+Borde - border
+Podemos dar estilo al borde que rodea a nuestro 
+elemento indicando valores para las propiedades 
+que por ejemplo,
+permiten establecer el color, el ancho y el estilo 
+del borde
+*/
+aside>p {
+    border-color: rgb(0, 255, 179);
+    border-style: solid;
+    border-width: 8px;
+   }
+/*-------------------------------------------------*/
+/*
+Las propiedades pueden ser escritas individualmente, 
+o en una única utilizando sólo la palabra clave 
+border y luego de los “:” los
+valores que correspondan
+Ejemplo: En el ejemplo anterior, podemos lograr lo 
+mismo con la regla que se muestra en una línea
+*/
+   p.junior {
+    border: darkblue solid 10px;
+   }/*
+                B       B      B
+                o       o      o
+                r       r      r
+                d       d      d
+                e       e      e
+                -       -      -
+                c       d      d
+                o       e      e
+                l       -      -
+                o       e      5
+                r       s      p
+                -       t      x
+                r       i      -
+                o       l      d
+                j       o      e
+                o       -      -
+                -       s      a
+                -       o      n
+                -       l      c
+                -       i      h
+                -       d      o
+                -       o      -
+   
+---------------------------------------------------*/
+/*
+Modelo de Cajas:Borde diferenciado - border top, right, bottom, left
+
+Podemos dar estilo a cada borde por separado, 
+o combinando los bordes
+Ejemplo: A nuestro ejemplo le damos distinto estilo 
+a cada borde
+   */
+aside.Alpha>p{
+    border-top: red 5px dashed;
+    border-right: green 10px solid;
+    border-bottom: blue 4px dotted;
+    border-left: orange 7px solid;
+    padding: 20p;
+    width: 30%;
+
+   }
+/*---------------------------------------------------*/
+/*
+Modelo de Cajas: Relleno - padding
+Entre el contenido y el borde, está el espacio de 
+relleno o padding en inglés, siendo el primer espacio
+que rodea por completo al contenido. En
+este caso, podemos indicar la distancia de separación
+entre el contenido y el borde, para sus 4 lados, 
+pudiendo tener distintos valores.
+Ejemplo
+: Queremos que el texto de nuestros párrafos estén
+separados de los bordes, por un relleno de 10 píxeles.
+*/   
+   aside.Beta >p {
+    border-color: red;
+    border-style: solid;
+    border-width:2px;
+    padding: 5px;
+   }
+   
+   aside.Gamma >p {
+    border: red solid 5px;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-left: 10px;
+   }
+  /*modelo de cajas abreviado
+  en lugar de indicar cada par formado por
+  "lado:valor de separacion", podemos hacerlo de forma 
+  abreviada en una unica.
+  por ejemplo de eesto:
+
+   aside.tetha >p {
+    border: red solid 5px;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+   }
+    a esto:
+   
+p {
+    border: red solid 5px;
+    padding: 20px px 0px 10px
+}
+             T     R   B   L     
+             o     i   o   e
+             p     g   t   f
+                   t   t   t
+                   h   o
+                       m
+   
+   */
+    aside.Delta >p {
+    border: Darkviolet solid 5px;
+    padding: 20px px 0px 10px
+}
+/*---------------------------------------------------*/
+/*
+MODELO DE CAJAS:MARGEN - margin
+Al borde, lo rodea externamente el margen, 
+que nos dará el espacio de separación con otros
+elementos/cajas y los límites de la página.
+Ejemplo: Queremos que nuestros párrafos estén 
+rodeados por un borde de color rojo sólido y de 5 
+píxeles de ancho
+*/
+
+aside.Epsilon >p {
+    border: rgb(229, 255, 0) solid 5px;
+    padding: 20px 10px 0px 10px;
+    margin: 0px 40px 0px 10px;
+}/*
+             T    R   B   L     
+             o    i   o   e
+             p    g   t   f
+                  t   t   t
+                  h   o
+                      m
+   */
+/*
+Observe que no hay
+separación entre los dos
+párrafos, ya que tanto el
+margin-top como el
+margin-botton están
+indicados de 0 píxeles*/
+/*---------------------------------------------------*/
+/*Modelo de Cajas: Tamaño de CAJA-box-sizing
+
+Existen 2 alternativas para dimensionar la caja del 
+contenido, mediante la propiedad box-sizing :
+
+CONTENT-BOX
+Es el que tiene por defecto, las
+dimensiones de la caja del contenido,
+dadas en ancho (width) y alto (height),
+sólo se refieren a la dimensión del
+contenido
+
+BORDER-BOX
+En este caso, las dimensiones dadas
+en ancho y alto, incluyen:
+contenido + relleno + bord
+
+Ejemplo: A continuación vemos como se verían 2 
+elementos div, con la misma altura (height) y el 
+mismo ancho (width) pero con distinta propiedad de 
+box-sizing
+*/
+div {
+    width: 180px;
+    height: 60px;
+    padding: 10px;
+    border: 8px solid blue;
+    background: pink;
+}
+#contenido {box-sizing:content-box}
+#borde {box-sizing:border-box}
+
+

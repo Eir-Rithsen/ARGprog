@@ -1,0 +1,152 @@
+/*
+Texto: Ejercicio
+Partí de la solución del ejercicio que se te propuso 
+que resuelvas en la presentación de
+CSS - Texto y en esta ocasión aplica lo visto en
+Modelo de Cajas, de modo tal que:
+
+1.Los subtítulos deben quedar encerrados por un 
+recuadro y tener borde. Aplicale el
+estilo que creas que queda mejor.
+
+2.Los párrafos deben estar contenidos por el mismo 
+recuadro si corresponden al
+mismo subtítulo. Es decir, debe haber un recuadro 
+para el subtítulo, y debajo a
+continuación debe haber un recuadro único para los 
+párrafos que tienen que ver cons
+ese subtítulo. No deben tener borde.
+
+3.El margen de separación entre el subtítulo y sus 
+párrafos, debe ser menor al margen
+de separación entre los párrafos y el siguiente 
+subtítulo.
+
+4.Aplicá en los casos que creas necesario, relleno.
+
+*/
+
+  h1+p {font-style: italic;
+    font-size: medium;
+    font-weight: light;
+    font-family: "Roboto" ,"Times New Roman", "Times, serif";
+    color: crimson;
+    text-align:justify;
+    text-decoration: underline;}
+
+  .web_browser {
+    
+        width: 150px;
+        height: 80%;
+        padding: 10px;
+        border: 5px solid rgb(0, 0, 0);
+        text-align: center;
+  }
+  #web_browser {box-sizing:border-box}
+  .web_browser +p
+  {  
+    width: 80%;
+    height: 80%;
+    padding: 10px;
+    border: px solid blue;
+    background: pink;
+    text-align: center;
+}
+  #web_bowser +p {box-sizing:content-box}
+
+
+h3 p{color: rgb(177, 73, 73);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    font-weight: 700;
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+    border: 8px solid blue;
+    background: rgb(192, 213, 255);
+    text-align: center;
+}
+.Web_Frontend_y_Backend {
+    
+    width: 150px;
+    height: 80%;
+    padding: 10px;
+    border: 8px solid blue;
+    background: rgb(24, 235, 119);
+    text-align: center;
+}
+#Web_Frontend_y_Backend {box-sizing:border-box}
+.Web_Frontend_y_Backend +p, p.backend
+{  
+width: 80%;
+height: 80%;
+padding: 10px;
+border: px solid blue;
+background: rgb(54, 49, 106);
+text-align: center;
+}
+#Web_Frontend_y_Backend +p, p.backend {box-sizing:content-box}
+
+.HTML{
+    
+    width: 150px;
+    height: 80%;
+    padding: 10px;
+    border: 10px solid rgb(180, 181, 193);
+    background: rgb(192, 255, 224);
+    text-align: center;
+}
+#HTML {box-sizing:border-box}
+.HTML +p
+{  
+width: 80%;
+height: 80%;
+padding: 10px;
+border: px solid blue;
+background: rgb(192, 255, 224);
+text-align: center;
+}
+#HTML +p {box-sizing:content-box}
+
+h3 p{color: rgb(177, 73, 73);
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-size: x-large;
+font-weight: 700;
+width: 80%;
+height: 40px;
+padding: 10px;
+border: 8px solid blue;
+background: rgb(192, 213, 255);
+text-align: center;
+}
+    p.Epsylon {
+        color: rgb(243, 3, 191);
+        text-align: justify;
+    }
+    
+    p.beta{
+        color: rgb(174, 57, 57);
+        text-align: justify;
+    }
+    
+    p.blue, p.green{
+        color:lightseagreen;
+        text-align: justify;
+    }
+    
+    p.alfa, p.Etha {
+        color: rgb(111, 9, 131);
+        text-align: justify;
+    }
+    
+    h3+p, p.backend{
+        color:red;text-align: 
+        justify;
+    }
+    
+    p{
+        color: blue;text-align: 
+        justify;
+    }
+    
+    
