@@ -1,0 +1,83 @@
+body{
+    font-family: sans-serif;
+    background-image: linear-gradient(to left,rgb(26, 23, 23),rgb(240, 64, 64));
+}
+div{
+    border-radius: 5px ;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    align-content: center;
+    text-align: justify;
+    padding-left :5% ;
+    padding-right: 6%;
+    padding-bottom: 0%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+label{
+    text-align: left;
+    color: rgb(15, 15, 15);  
+}
+#Edad, #Dni, #Nombre, #Apellido{
+    padding-right: 35%;
+    border: 1px;
+    outline: none;
+    text-decoration: underline;
+    text-align: right; 
+    }
+h2{
+    text-align:center;
+        
+}
+#Correo{
+    padding-right: 20%;
+    border: 1px;
+    outline: none;
+    text-decoration: underline;
+    text-align: right
+}
+button{
+    background-color: rgb(150, 20, 20);
+    color: aliceblue;
+    border-radius: 15px;
+    border: 0;
+   margin-left: 10%;
+   padding-bottom: 2%;
+   padding-right: 35%;
+   padding-left: 35%;
+   padding-top: 1%;
+}
+hr{
+    margin-left: 20%;
+       
+}
+#regla{
+    margin: 0;
+}
+#Edad{
+    padding-right: 63%;
+    
+}
+thead{
+    border: 2px solid;
+}
+table{
+    color: rgb(255, 255, 255);
+    align-content: justify;
+    align-items: justify;
+    text-align: justify;
+}
+tr,th{
+    background-color: black;
+    border: 2px solid black;
+    
+
+}
+#Tabla-Datos{
+    margin: 0 auto;
+    
+}
+a{
+    color: blanchedalmond;
+    font-size: large;
+}

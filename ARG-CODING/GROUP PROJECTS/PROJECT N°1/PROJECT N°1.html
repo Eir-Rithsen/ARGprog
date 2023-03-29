@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Grupal</title>
+    <link rel="stylesheet" href="PROJECT N°1.css">
+</head>
+<body>
+    <div>
+        <br>
+    <h2>Datos</h2>
+    <hr id="regla"><br>
+    <form id ="Formulario">
+        <p><label for="nombre">Nombre</label>
+        
+        <input type="text" id="Nombre" name="nombre" minlength="2" maxlength="20" placeholder="" required autofocus></p><br>
+        <hr>
+      
+        <p><label for="apellido">Apellido</label>
+        <input type="text" id="Apellido" name="apellido" minlength="2" maxlength="25"  required></p><br>
+      <hr>
+        <p><label for="edad" id="modif">Edad</label>
+        <input type="number" id="Edad" name="edad"min="18" max="120"  required></p><br>
+      <hr>
+        <p><label for="dni">DNI</label>
+            <input type="number" id="Dni" name="dni" required min="100000"  required></p><br>
+      <hr>
+        <p><label for="Correo">Correo Electrónico</label>
+        <input type="email" id="Correo" name="Correo" placeholder="" required></p>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <button onclick="AgregarDatosTabla()">Enviar</button><br><br>
+    </div>
+      
+       <br><br>
+      </form>
+      
+
+      <table id="Tabla-Datos"> 
+        <thead>
+            <caption>Tabla</caption>
+          <tr>
+            <th id="hola">Nombre</th>
+            <th>Apellido</th>            
+            <th>Edad</th>
+            <th>Dni</th>
+            <th>Correo Electrónico</th>
+          </tr>
+        </thead>
+      </table>  
+      <br><br><br><br>
+      <a href="Leame.html" target="_blank">Autores</a>
+      
+
+
+      <script src="PROJECT N°1.js"></script>      
+</body>
+</html>
