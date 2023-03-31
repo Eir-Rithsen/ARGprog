@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONFIRMACION</title>
+</head>
+<body>
+    <div>
+        <h2>Confirmacion de nombre y apellido</h2>
+        <p id="datos"></p>
+        <h2>Nacionalidad</h2>
+        <p id="nacionalidad"></p>
+        <input type="submit" value="Confirmar" onclick="alert('Muchas Gracias!')">
+
+    </div>
+</body>
+<script>
+    let parametros = new URLSearchParams(window.location.search);
+
+
+    let apellido = parametros.get('apellido');
+    let nombre = parametros.get('nombre');
+    let nacionalidad = parametros.get('nacionalidad');
+
+    document.getElementById("datos").innerHTML = "Tus datos ingresados son: " + nombre + " " + apellido;
+    document.getElementById("nacionalidad").innerHTML = "Su nacionalidad es: " + nacionalidad;
+    </script>
+</body>
+</html>

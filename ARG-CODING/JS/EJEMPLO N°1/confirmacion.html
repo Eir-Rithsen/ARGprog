@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>confirmacion</title>
+</head>
+<body>
+    <div>
+        <h1>Compra de entradas</h1>
+        <h2>Confirmacion de la compra</h2>
+        <p id="datos"></p>
+        <h2>Precio Total</h2>
+        <p id="total"></p>
+        <input type="submit" value="Confirmar" onclick="alert('Muchas Gracias!')">
+
+    </div>
+</body>
+<script>
+    let parametros = new URLSearchParams(window.location.search);
+
+    const PRECIO = 500;
+    let apellido = parametros.get('apellido');
+    let nombre = parametros.get('nombre');
+    let cantidad = parametros.get('cantidad');
+
+    document.getElementById("datos").innerHTML = "Tus datos " + nombre + " " + apellido;
+    document.getElementById("total").innerHTML ="$" + PRECIO * cantidad;
+</script>
+</html>
