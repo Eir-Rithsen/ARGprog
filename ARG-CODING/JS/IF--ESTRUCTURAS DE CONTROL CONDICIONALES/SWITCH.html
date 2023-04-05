@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWITCH</title>
+</head>
+<body>
+    <script>
+
+let color = prompt('Ingrese un color');
+ switch( color ) {
+    /*Habrá tantos bloques case
+como posibles comparaciones o
+desiciones necesitemos*/
+ case 'red':   
+ document.write('El color es rojo');
+ break;/*El break permite salir del switch
+y evitar que se ejecuten las
+siguientes instrucciones
+*/
+ case 'blue':
+ document.write('El color es azul');
+ break;
+ default:/*La rama default (por omisión),
+será la ejecutada si la variable
+no tomó uno de los valores
+considerados
+*/
+ document.write('El color no es rojo ni azul');
+ }
+
+
+    </script>
+</body>
+</html>

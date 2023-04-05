@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercico 2</title>
+</head>
+<body>
+    
+    <script>
+
+      let option = confirm ("Do you wish to keep receiving notifications?");
+      if (option == true) {
+        let Email = prompt("Insert your email");
+        let Age = prompt ("Insert your age");
+        if (Age >= 18) {
+            alert("Your email is" + Email);
+        } else{
+            alert("You're not old enough to receive our newsletter");
+        }
+      } else {
+        alert ("Thank you for your time")
+      }
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Condiciones</title>
+</head>
+<body>
+    <script>
+        let edad = prompt("¿Cuál es tu edad?");
+        let dinero = prompt("¿Cuánto dinero tienes?");
+        let precio_alcohol = 1000;
+
+
+        let tiene_edad_suficiente = edad >= 18;
+
+        let tiene_dinero_suficiente = dinero >= precio_alcohol;
+
+        let puede_comprar_alcohol = tiene_edad_suficiente && tiene_dinero_suficiente;
+
+
+        document.write("Puede comprar alcohol: " + puede_comprar_alcohol);
+
+    </script>
+</body>
+</html>

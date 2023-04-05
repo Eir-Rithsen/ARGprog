@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF anidado</title>
+</head>
+<body>
+    <script>
+        /*Podemos agregar nuevas instrucciones if ya sea por la rama de 
+        la condición verdadera como por la rama de la condición falsa (else)*/
+
+        let edad = prompt('Ingrese la edad');
+ if (edad < 16) {
+ document.write("No puede votar");
+ } else if (edad >= 16 && edad < 18) {
+ document.write("Puede votar");
+ } else if (edad >= 18 && edad < 70) {
+ document.write("Debe votar");
+ } else {
+ document.write("Puede no votar");
+ }
+
+
+ /*Solo se ejecuta una
+de las ramas*/
+
+
+    </script>
+</body>
+</html>

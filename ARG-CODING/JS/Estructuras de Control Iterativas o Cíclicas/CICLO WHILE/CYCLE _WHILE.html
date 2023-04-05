@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CICLO WHILE</title>
+</head>
+<body>
+    <script>
+//Utilizado para repetir instrucciones mientras una condición sea verdadera
+
+        let it = 1;
+        while (it<=5 && confirm("Agrega el Item " + it + "?"))
+        {
+            document.write("<li>Item " + it + "</li>");
+            it++;
+        }
+        /*En este ejemplo se le preguntará al internauta, antes 
+        de iniciar cada ciclo; si “Agrega el Item N?, siendo N el 
+        valor de la variable it.
+        En base a la respuesta dada por el internauta y el valor 
+        que tenga it,se ejecutarán las instrucciones dentro del 
+        ciclo y volverá a evaluarse la condición, preguntando 
+        previamente de nuevo al internauta.
+        Se saldrá del ciclo cuando el internauta presione 
+        el botón de cancelar de la ventana de confirmación; 
+        o porque it vale 6.*/
+
+        /*
+        while ( condición ) {
+            // instrucciones
+        }
+        
+                Condición:
+➔ Definir la condición de continuación
+➔ La condición, en algún momento, debe volverse
+falsa (false), o las instrucciones se repetirán
+infinitamente
+➔ Desconocemos cuándo finalizará,
+depende de un evento que sucederá en uno de
+los ciclos, y que hará que la condición se vuelva
+falsa (false)
+
+        */
+
+
+
+    </script>
+</body>
+</html>

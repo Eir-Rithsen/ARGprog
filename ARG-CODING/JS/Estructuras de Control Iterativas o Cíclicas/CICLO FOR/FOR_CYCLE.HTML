@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"FOR" CYCLE</title>
+</head>
+<body>
+    <script>
+
+    for (let i = 1; i <= 10; i++) {
+         document.write("Ciclo número: " + i + "<br>");
+    }
+        /*
+        En este ejemplo se desea imprimir 10
+        líneas en nuestra página con el texto
+        “Ciclo número: N”, reemplazando a N
+        por el valor de i, que es la variable
+        encargada de contabilizar los ciclos
+
+
+        for ( inicio; condición; actualización ) {instrucciones}
+
+            Inicio:
+        ➔ Declarar un iterador y su valor inicial
+        ➔ Ejemplo: let i = 1;
+                    
+                    Condición:
+        ➔ Definir la condición de finalización
+        ➔ Ejemplo: i <= 6;
+
+                                Actualización:
+        ➔ Actualizar el iterador en cada ciclo
+        ➔ Ejemplo: i++
+        *Es común incrementar el iterador de a 1 usando 
+        el operador ++*/
+
+    </script>
+
+
+    <script>
+        for (let i = 1; i <= 6; i++) {
+            let hx = "<h"+i+">Titulo "+i+"</h"+i+">";
+            document.write(hx);
+        }/*                                |
+                                           |
+                                           |
+                            Necesitamos componer las etiquetas de
+                        apertura y cierre respectivas, concatenando
+                        la cadena correspondiente, por ejemplo “</h”
+                        con el valor de i, y el signo de cierre “>
+*/
+
+
+        /*En este ejemplo se muestra como lograr incorporar 
+        a nuestra página html, 6 elementos de encabezado desde 
+        h1 a h6, indicando por cada uno de ellos de cuál se trata;
+        utilizando código JavaScript*/
+
+    </script>
+</body>
+</html>

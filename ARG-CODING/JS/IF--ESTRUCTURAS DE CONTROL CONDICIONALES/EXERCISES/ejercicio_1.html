@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercico 1</title>
+</head>
+<body>
+    <script>
+        let NumberX = parseInt(prompt("Imput a number"));
+
+        if ( NumberX > 0) {
+            document.write("This a positive number");
+        } else if (NumberX < 0) {
+            document.write("This is a Negative number");
+        } else if (NumberX == 0){
+            document.write("The number is equal to 0");
+        } else {
+            alert("The entered value is not a number");
+        }
+
+        /*
+        //CHECK IF THE NUMBER IS EVEN
+        if (NumberX % 2 == 0){
+
+            console.log("The number is even.");
+            
+        }
+        //IF THE NUMBER IS ODD
+        else {
+            console.log("The number is odd")
+        }
+
+        
+        
+        In the above program, number % 2 == 0 checks whether the
+        number is even. If the remainder is 0, the number is even.
+
+        In the case, 27 % 2 equals to 1. Hence, the number is odd.
+
+        The above program can also be written using a ternary operator.
+----------------------------------------------------------------------
+        Example 2: Using Ternary Operator
+
+        // program to check if the number is even or odd
+        // take input from the user:
+
+        const number = prompt("Enter a number: ");
+
+        // ternary operator
+        const result = (number % 2  == 0) ? "even" : "odd";
+
+        // display the result
+        console.log(`The number is ${result}.`);
+        Run Code
+        Output
+
+                    Enter a number: 5
+                 The number is odd.
+        
+        */
+    </script>
+</body>
+</html>
